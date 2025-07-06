@@ -49,7 +49,7 @@ Make sure you have the latest version of:
 
 ```bash
 # Clone this repo
-git clone https://github.com/ridwantaufk/portfolio-modern.git
+git clone https://github.com/ridwantaufk/my-portfolio-modern.git
 cd portfolio-modern
 
 # Install dependencies

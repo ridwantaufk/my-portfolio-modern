@@ -5,59 +5,59 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Selamat datang di repositori **Modern Portfolio Website** saya!  
-Proyek ini adalah website portofolio pribadi yang dibangun dengan teknologi web modern untuk menampilkan proyek, pengalaman, dan keahlian saya.
+Hey there! Welcome to my **Modern Portfolio Website** repo.  
+This is a personal portfolio site built using modern web tech to showcase my projects, skills, and experience.
 
-[![Pratinjau Proyek](https://via.placeholder.com/800x400.png?text=Tambahkan+Screenshot+Proyek+Anda+di+Sini)](https://your-live-demo-url.com)
+[![Project Preview](https://via.placeholder.com/800x400.png?text=Add+your+project+screenshot+here)](https://your-live-demo-url.com)
 
-> 💡 *Ganti gambar di atas dengan screenshot asli proyek kamu dan update tautan demo-nya.*
-
----
-
-## 🌟 Fitur Utama
-
-- 🎨 **Desain Modern & Responsif** – Dibuat dengan Tailwind CSS, cocok di semua ukuran layar.
-- ⚛️ **Komponen Reusable** – Struktur React modular agar mudah dikembangkan.
-- 🔐 **Type-Safe** – Menggunakan TypeScript untuk keamanan dan debugging lebih baik.
-- 🌗 **Mode Terang/Gelap** – Mendukung switching tema real-time.
-- 💨 **Animasi Halus** – Transisi interaktif menggunakan Framer Motion.
-- 🔎 **SEO Friendly** – Optimal untuk mesin pencari berkat kekuatan Next.js.
+> 💡 *Tip: Replace the image above with a real screenshot of your project and update the link.*
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🌟 Features
+
+- 🎨 **Clean, Responsive Design** – Built with Tailwind CSS for smooth layouts on all screen sizes.
+- ⚛️ **Component-Based** – Reusable React components to keep things modular and organized.
+- 🔐 **Fully Type-Safe** – Written in TypeScript for safer, cleaner code.
+- 🌗 **Dark/Light Mode** – Toggle themes on the fly with `ThemeProvider`.
+- 💨 **Smooth Animations** – Framer Motion brings transitions to life.
+- 🔎 **SEO Ready** – Powered by Next.js for better search engine visibility.
+
+---
+
+## 🛠️ Tech Stack
 
 - **Framework**: [Next.js](https://nextjs.org/)
-- **Library UI**: [React](https://reactjs.org/)
-- **Bahasa**: [TypeScript](https://www.typescriptlang.org/)
+- **UI Library**: [React](https://reactjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animasi**: [Framer Motion](https://www.framer.com/motion/)
-- **Deployment**: [Vercel](https://vercel.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Hosting**: [Vercel](https://vercel.com/)
 
 ---
 
-## 🚀 Cara Menjalankan
+## 🚀 Getting Started
 
-### ✅ Prasyarat
+### ✅ Requirements
 
-Pastikan kamu sudah menginstall:
+Make sure you have the latest version of:
 
-- [Node.js](https://nodejs.org/) (versi 18+)
-- [npm](https://www.npmjs.com/) atau [yarn](https://yarnpkg.com/)
+- [Node.js](https://nodejs.org/) (v18 or above)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### 💻 Instalasi
+### 💻 Installation
 
 ```bash
-# Clone repo
-git clone https://github.com/your-username/portfolio-modern.git
+# Clone this repo
+git clone https://github.com/ridwantaufk/portfolio-modern.git
 cd portfolio-modern
 
-# Install dependensi
+# Install dependencies
 npm install
-# atau
+# or
 yarn install
 
-# Jalankan project
+# Start the development server
 npm run dev
-# atau
+# or
 yarn dev

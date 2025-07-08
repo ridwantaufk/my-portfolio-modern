@@ -65,7 +65,6 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="font-poppins font-bold text-xl cursor-pointer"
@@ -76,7 +75,6 @@ const Header = () => {
             </span>
           </motion.div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <motion.button

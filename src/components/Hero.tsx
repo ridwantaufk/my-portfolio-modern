@@ -91,7 +91,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pointer-events-none select-none">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -121,13 +121,15 @@ const Hero = () => {
                     : "bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md"
                 }`}
               >
-                <User className={`w-16 h-16 sm:w-20 sm:h-20 ${
-                  theme === "light"
-                    ? "text-blue-600"
-                    : theme === "dark"
-                    ? "text-purple-400"
-                    : "text-white"
-                }`} />
+                <User
+                  className={`w-16 h-16 sm:w-20 sm:h-20 ${
+                    theme === "light"
+                      ? "text-blue-600"
+                      : theme === "dark"
+                      ? "text-purple-400"
+                      : "text-white"
+                  }`}
+                />
               </div>
             </motion.div>
           </motion.div>
@@ -202,7 +204,7 @@ const Hero = () => {
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 pointer-events-auto"
           >
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}

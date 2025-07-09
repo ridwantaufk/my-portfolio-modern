@@ -191,7 +191,6 @@ const Skills = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {/* Section Title */}
           <div className="text-center mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -239,7 +238,6 @@ const Skills = () => {
             </motion.p>
           </div>
 
-          {/* Skills Grid */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -259,7 +257,6 @@ const Skills = () => {
                     : "bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20"
                 }`}
               >
-                {/* Category Title */}
                 <h3
                   className={`text-xl font-bold font-poppins mb-6 text-center ${
                     theme === "gradient"
@@ -270,7 +267,6 @@ const Skills = () => {
                   {category.title}
                 </h3>
 
-                {/* Skills List */}
                 <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <motion.div
@@ -319,7 +315,6 @@ const Skills = () => {
                         </span>
                       </div>
 
-                      {/* Progress Bar */}
                       <div
                         className={`w-full h-2 rounded-full overflow-hidden ${
                           theme === "light"
@@ -355,7 +350,6 @@ const Skills = () => {
             ))}
           </motion.div>
 
-          {/* Additional Info */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

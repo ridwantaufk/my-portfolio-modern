@@ -8,9 +8,21 @@
 Hey there! Welcome to my **Modern Portfolio Website** repo.  
 This is a personal portfolio site built using modern web tech to showcase my projects, skills, and experience.
 
-[![Project Preview](https://via.placeholder.com/800x400.png?text=Add+your+project+screenshot+here)](https://your-live-demo-url.com)
+<div align="center">
+  <a href="https://your-live-demo-url.com">
+    <img src="/images/FirstDisplay.png" alt="Project Preview 1" width="800" />
+  </a>
+  <br />
+  <a href="https://your-live-demo-url.com">
+    <img src="/images/SecondDisplay.png" alt="Project Preview 2" width="800" />
+  </a>
+  <br />
+  <a href="https://your-live-demo-url.com">
+    <img src="/images/ThirdDisplay.png" alt="Project Preview 3" width="800" />
+  </a>
+</div>
 
-> 💡 *Tip: Replace the image above with a real screenshot of your project and update the link.*
+> 💡 _Tip: Replace the image above with a real screenshot of your project and update the link._
 
 ---
 
@@ -61,3 +73,4 @@ yarn install
 npm run dev
 # or
 yarn dev
+```

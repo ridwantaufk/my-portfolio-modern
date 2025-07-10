@@ -71,6 +71,28 @@ const Experience = () => {
       website: "https://www.astra-honda.com",
     },
   ];
+
+  return (
+    <section
+      id="experience"
+      className={`py-20 ${
+        theme === "light"
+          ? "bg-gray-50"
+          : theme === "dark"
+          ? "bg-gray-900/50"
+          : "bg-black/20"
+      }`}
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        ></motion.div>
+      </div>
+    </section>
+  );
 };
 
 export default Experience;

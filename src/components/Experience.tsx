@@ -152,6 +152,60 @@ const Experience = () => {
                   : "bg-gradient-to-b from-white/60 to-white/30"
               }`}
             />
+
+            <div className="space-y-12">
+              {experiences.map((exp, index) => (
+                <motion.div
+                  key={exp.id}
+                  variants={itemVariants}
+                  className="relative flex items-start"
+                >
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className={`relative z-10 w-4 h-4 rounded-full border-4 ${
+                      theme === "light"
+                        ? "bg-white border-blue-500"
+                        : theme === "dark"
+                        ? "bg-dark-bg border-purple-500"
+                        : "bg-white border-white"
+                    } flex-shrink-0 mt-6`}
+                  >
+                    <div>
+                      <h4
+                        className={`font-semibold mb-2 ${
+                          theme === "light"
+                            ? "text-gray-800"
+                            : theme === "dark"
+                            ? "text-white"
+                            : "text-white"
+                        }`}
+                      >
+                        Technologies Used:
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {exp.technologies.map((tech, techIdx) => (
+                          <span
+                            key={techIdx}
+                            className={`px-3 py-1 text-xs font-medium rounded-full ${
+                              theme === "light"
+                                ? "bg-blue-100 text-blue-800"
+                                : theme === "dark"
+                                ? "bg-purple-900 text-purple-200"
+                                : "bg-white/20 text-white backdrop-blur-md"
+                            }`}
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
           <motion.div

@@ -137,6 +137,24 @@ const Experience = () => {
           </div>
 
           <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="relative max-w-4xl mx-auto"
+          >
+            <div
+              className={`absolute left-8 top-0 bottom-0 w-0.5 ${
+                theme === "light"
+                  ? "bg-gradient-to-b from-blue-400 to-purple-400"
+                  : theme === "dark"
+                  ? "bg-gradient-to-b from-purple-400 to-pink-400"
+                  : "bg-gradient-to-b from-white/60 to-white/30"
+              }`}
+            />
+          </motion.div>
+
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

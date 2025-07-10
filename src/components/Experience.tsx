@@ -173,6 +173,130 @@ const Experience = () => {
                         : "bg-white border-white"
                     } flex-shrink-0 mt-6`}
                   >
+                    <motion.div
+                      animate={{ scale: [1, 1.2, 1] }}
+                      transition={{ duration: 2, repeat: Infinity }}
+                      className={`absolute inset-0 rounded-full ${
+                        theme === "light"
+                          ? "bg-blue-500"
+                          : theme === "dark"
+                          ? "bg-purple-500"
+                          : "bg-white"
+                      } opacity-20`}
+                    />
+                  </motion.div>
+
+                  <motion.div
+                    whileHover={{ scale: 1.02, y: -5 }}
+                    className={`ml-8 flex-1 p-6 rounded-3xl transition-all duration-300 ${
+                      theme === "light"
+                        ? "bg-white shadow-neumorphic-light hover:shadow-xl"
+                        : theme === "dark"
+                        ? "bg-dark-surface shadow-neumorphic-dark hover:shadow-xl"
+                        : "bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20"
+                    }`}
+                  >
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                      <div>
+                        <h3
+                          className={`text-xl font-bold font-poppins mb-1 ${
+                            theme === "light"
+                              ? "text-gray-800"
+                              : theme === "dark"
+                              ? "text-white"
+                              : "text-white"
+                          }`}
+                        >
+                          {exp.title}
+                        </h3>
+                        <div className="flex items-center gap-2 mb-2">
+                          <a
+                            href={exp.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`font-semibold hover:underline flex items-center gap-1 ${
+                              theme === "light"
+                                ? "text-blue-600 hover:text-blue-700"
+                                : theme === "dark"
+                                ? "text-purple-400 hover:text-purple-300"
+                                : "text-white/90 hover:text-white"
+                            }`}
+                          >
+                            {exp.company}
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        className={`text-sm ${
+                          theme === "light"
+                            ? "text-gray-500"
+                            : theme === "dark"
+                            ? "text-gray-400"
+                            : "text-white/70"
+                        }`}
+                      >
+                        <div className="flex items-center gap-1 mb-1">
+                          <Calendar className="w-4 h-4" />
+                          {exp.period}
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <MapPin className="w-4 h-4" />
+                          {exp.location}
+                        </div>
+                      </div>
+                    </div>
+
+                    <p
+                      className={`mb-4 leading-relaxed ${
+                        theme === "light"
+                          ? "text-gray-600"
+                          : theme === "dark"
+                          ? "text-gray-300"
+                          : "text-white/80"
+                      }`}
+                    >
+                      {exp.description}
+                    </p>
+
+                    <div className="mb-4">
+                      <h4
+                        className={`font-semibold mb-2 ${
+                          theme === "light"
+                            ? "text-gray-800"
+                            : theme === "dark"
+                            ? "text-white"
+                            : "text-white"
+                        }`}
+                      >
+                        Key Responsibilities:
+                      </h4>
+                      <ul
+                        className={`space-y-1 ${
+                          theme === "light"
+                            ? "text-gray-600"
+                            : theme === "dark"
+                            ? "text-gray-300"
+                            : "text-white/80"
+                        }`}
+                      >
+                        {exp.responsibilities.map((responsibility, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <span
+                              className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${
+                                theme === "light"
+                                  ? "bg-blue-500"
+                                  : theme === "dark"
+                                  ? "bg-purple-500"
+                                  : "bg-white"
+                              }`}
+                            />
+                            {responsibility}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
                     <div>
                       <h4
                         className={`font-semibold mb-2 ${

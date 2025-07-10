@@ -135,6 +135,28 @@ const Experience = () => {
               My professional journey and career milestones
             </motion.p>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-center mt-16"
+          >
+            <motion.button
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className={`px-8 py-4 rounded-full font-semibold transition-all duration-300 ${
+                theme === "light"
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-neumorphic-light hover:from-blue-700 hover:to-purple-700"
+                  : theme === "dark"
+                  ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-neumorphic-dark hover:from-purple-700 hover:to-pink-700"
+                  : "bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30"
+              }`}
+            >
+              Download Full Resume
+            </motion.button>
+          </motion.div>
         </motion.div>
       </div>
     </section>

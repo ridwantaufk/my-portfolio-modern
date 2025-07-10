@@ -89,7 +89,53 @@ const Experience = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-        ></motion.div>
+        >
+          <div className="text-center mb-16">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold font-poppins mb-4"
+            >
+              <span
+                className={
+                  theme === "gradient"
+                    ? "text-white"
+                    : "text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text"
+                }
+              >
+                Work Experience
+              </span>
+            </motion.h2>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "4rem" }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className={`h-1 mx-auto rounded-full ${
+                theme === "gradient"
+                  ? "bg-white"
+                  : "bg-gradient-to-r from-blue-600 to-purple-600"
+              }`}
+            />
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className={`mt-6 text-lg max-w-2xl mx-auto ${
+                theme === "light"
+                  ? "text-gray-600"
+                  : theme === "dark"
+                  ? "text-gray-300"
+                  : "text-white/80"
+              }`}
+            >
+              My professional journey and career milestones
+            </motion.p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

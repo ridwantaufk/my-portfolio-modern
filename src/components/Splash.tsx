@@ -52,7 +52,7 @@ function pointerPrototype(): Pointer {
   };
 }
 
-e`xport default function SplashCursor({
+export default function SplashCursor({
   SIM_RESOLUTION = 128,
   DYE_RESOLUTION = 1440,
   CAPTURE_RESOLUTION = 512,
@@ -384,7 +384,7 @@ e`xport default function SplashCursor({
           gl.useProgram(this.activeProgram);
         }
       }
-    }`
+    }
 
     const baseVertexShader = compileShader(
       gl.VERTEX_SHADER,

@@ -305,7 +305,7 @@ const Experience = () => {
                         {exp.responsibilities.map((responsibility, idx) => (
                           <li key={idx} className="flex items-start gap-2">
                             <span
-                              className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${
+                              className={`w-[5px] h-[5px] rounded-lg mt-2 flex-shrink-0 ${
                                 theme === "light"
                                   ? "bg-blue-500"
                                   : theme === "dark"

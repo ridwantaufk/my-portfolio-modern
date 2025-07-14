@@ -178,8 +178,8 @@ const About = () => {
               <div className="grid grid-cols-3 gap-4 py-6">
                 {[
                   { number: "3+", label: "Years Experience" },
-                  { number: "50+", label: "Projects Completed" },
-                  { number: "20+", label: "Happy Clients" },
+                  { number: "10+", label: "Projects Completed" },
+                  { number: "5+", label: "Happy Clients" },
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
